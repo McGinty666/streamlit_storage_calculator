@@ -2,6 +2,7 @@
 import numpy as np
 
 def generate_synthetic_flow(rainfall, R, T, K):
+    T = T/12
     synthetic_flow = np.zeros(len(rainfall))
     for i in range(len(rainfall)):
         for j in range(i):
